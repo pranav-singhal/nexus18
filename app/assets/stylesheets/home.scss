@@ -1,0 +1,19 @@
+nav{
+  height: 146px;
+  ul#main-header-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position:relative;
+    top: 36px;
+  }
+
+
+    img{
+      height: 146px;
+      width: 160px;
+      display: block;
+      margin: 0 auto;
+    }
+
+}
