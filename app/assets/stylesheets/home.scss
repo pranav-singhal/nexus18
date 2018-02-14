@@ -1,19 +1,231 @@
+a,a:hover, a:visited{
+  text-decoration: none !important;
+  color:inherit !important;
+  transition: 0.5s all;
+}
+a:hover{
+  transition: 0.5s all;
+  color: #d21e58 !important;
+
+}
+.changeNavbar {
+   background: white;
+   img{
+     height: 50px;
+     width: 50px;
+   }
+    height: auto;
+    ul.main-header-list{
+      top: 20px;
+      color:black;
+    }
+}
 nav{
+
   height: 146px;
-  ul#main-header-list{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+  // background: white;
+  transition: 0.5s all;
+  ul.main-header-list{
+    color:white;
+    font-size: 1.5rem;
+    font-family: Montserrat;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     position:relative;
-    top: 36px;
+    top: 76px;
+    transition: 0.5s all;
+    li:hover{
+      color: #d21e58;
+      transition: 0.5s all;
+
+
+    }
+
   }
 
 
     img{
+      transition: 0.5s all;
       height: 146px;
       width: 160px;
       display: block;
       margin: 0 auto;
     }
 
+}
+header{
+  .container-fluid{
+    height: 100vh;
+  }
+  background-size: cover;
+  background-position: center center;
+  @media only screen and (max-device-width: 773px) {
+
+        background-attachment: scroll;
+
+}
+  z-index: -1;
+  // position: relative;
+  // top: -146px;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('http://res.cloudinary.com/www-virgin-com/virgin-com-prod/sites/virgin.com/files/Articles/Media/V%20Festival/2015/nialllea7.jpg');
+
+  background-attachment: fixed;
+  img{
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 129vh;
+  }
+  .outer{
+    display: table;
+  width: 100%;
+  min-height: auto;
+  height: 100%;
+  position: relative;
+  top: -58px;
+
+  }
+  .center{
+    @media(max-width: 479px){
+      top: -73px;
+    position: relative;
+
+    }
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: blowBrush;
+    h1{
+      text-align: center;
+      font-size: 5.4em;
+    }
+    span{
+      position: relative;
+      top: -28px;
+      left: 51vw;
+    }
+  }
+
+}
+
+// sections on pages
+section{
+  h1{
+    color: rgb(211, 31, 87);
+    text-align: center;
+    font-family: blowBrush;
+    font-size: 3.4em;
+  }
+}
+
+
+// setting for slick
+.carousel{
+  // width: 80vw;
+  .slick-prev:before {
+  color: black;
+}
+.slick-next:before {
+  color: black;
+}
+.slick-list{
+  // padding: 0px 20px;
+height: 400px;
+    margin-top: 50px;
+// max-width: 100%;
+}
+
+  /* the parent */
+  .slick-slide{
+    // border: 1px solid black;
+    box-shadow: none;
+    transition: box-shadow 1s;
+    transition: transform 1s;
+  }
+  .slick-center{
+
+    transform: scale(1.2, 1.2);
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+  }
+  .slick-center::after{
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  // -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  // transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  div{
+    h2{
+      color: white;
+      font-family: blowBrush,'cursive';
+    }
+    margin: 10px;
+    height: 300px;
+        // margin: auto;
+        background-size: cover;
+        background-position: center center;
+
+    text-align: center;
+    // border: 1px solid black;
+  }
+}
+
+#events-index{
+  // background-image: url('/bg-brush.jpg');
+  // background-size: cover;
+  // background-attachment: scroll;
+  // background-position: center center;
+  .row{
+
+    margin-top: 80px;
+    @media(max-width: 729px){
+      margin-top: 0;
+    }
+
+    // background-attachment: fixed;
+    h3{
+      font-family: blowBrush,cursive;
+      text-align: center;
+    }
+  }
+
+}
+
+#sponsors-index{
+  margin-top: 100px;
+}
+
+#events-page, #each-event-page{
+  margin-top: 200px;
+  @media(max-width: 729px){
+    margin-top: 50px;
+  }
+}
+
+
+#each-event-page{
+  img{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 8px 8px rgba(0,0,0,0.23);
+    max-width: 100%;
+  }
+  p{
+    font-family: Montserrat;
+    font-size: 1.2em;
+    padding-top: 16px;
+  }
+  background-image: url('http://ava7.com/w/tv-series/friends/friends-tv-series-show.jpg');
+
+  background-attachment: fixed;
+  background-size: cover;
+
+  background-position: center center;
 }

@@ -1,0 +1,23 @@
+
+
+
+
+
+<div class="card">
+        <div class="front test">
+          <h1><%=event.title%></h1>
+             <img src="<%='/event_pics/'+event.image%>" alt="<%=event.title.capitalize%>">
+        </div>
+        <div class="back test">
+          <p style="padding-top: 10px;">
+            Event Date: 12/12/12
+          </p>
+          <p style=" position: absolute;top: 50%;left: 27%;">
+             <a href="/<%=event.id%>">Event Page</a>
+          </p>
+          <p style="position: absolute; bottom: 0;left:2px;  margin-bottom: 0;">
+             Register
+          </p>
+
+        </div>
+    </div>

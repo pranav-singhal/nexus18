@@ -11,5 +11,7 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
+//= require selectize
+//= require masonry/jquery.masonry
+//= require masonry/modernizr-transitions
 //= require_tree .

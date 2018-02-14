@@ -10,6 +10,15 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require 'masonry/basic'
+ *= require 'masonry/centered'
+ *= require 'masonry/fluid'
+ *= require 'masonry/gutters'
+ *= require 'masonry/infinitescroll'
+ *= require 'masonry/right-to-left'
+ *= require 'masonry/transitions'
+ *= require selectize
+ *= require selectize.default
  *= require_tree .
  *= require_self
  */
@@ -18,7 +27,20 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html{
+  height: 100%;
+}
+body,html{
+  /* height: 100%; */
 
-body{
-  background-color: #fbf3f1 !important;
+  /* background-color: #fbf3f1 !important; */
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  background-repeat: no-repeat;
+  background-image: url('/bg-brush.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center center;
+
 }
