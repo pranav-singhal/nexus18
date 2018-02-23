@@ -8,6 +8,7 @@ default: &default
   adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
+  host: localhost
 
 development:
   <<: *default
@@ -21,5 +22,9 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  host: localhost
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  username: appname
+  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>

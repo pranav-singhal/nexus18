@@ -1,7 +1,6 @@
 a,a:hover, a:visited{
   text-decoration: none !important;
   color:inherit !important;
-  transition: 0.5s all;
 }
 a:hover{
   transition: 0.5s all;
@@ -74,7 +73,7 @@ header{
   // top: -146px;
   height: 100vh;
   width: 100vw;
-  background-image: url('http://res.cloudinary.com/www-virgin-com/virgin-com-prod/sites/virgin.com/files/Articles/Media/V%20Festival/2015/nialllea7.jpg');
+  background-image: url('/back2.jpg');
 
   background-attachment: fixed;
   img{
@@ -204,7 +203,7 @@ height: 400px;
   margin-top: 100px;
 }
 
-#events-page, #each-event-page{
+#events-page, #each-event-page, #our-team{
   margin-top: 200px;
   @media(max-width: 729px){
     margin-top: 50px;
@@ -228,4 +227,46 @@ height: 400px;
   background-size: cover;
 
   background-position: center center;
+}
+
+
+#our-team{
+  img.member{
+    display: block;
+    margin: 0 auto;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    max-width: 20vw;
+    border-radius: 50%;
+  }
+  h3.member{
+    text-align: center;
+    font-family: 'friends';
+    color: white;
+
+  }
+
+  #creative{
+    background-image: url('/creative-back.jpg');
+
+    // background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    h3{
+      color:rgb(249, 255, 241);
+    }
+
+
+  }
+  #techincal{
+    background-image: url('/tech-back.jpg');
+
+    background-attachment: fixed;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+  }
 }

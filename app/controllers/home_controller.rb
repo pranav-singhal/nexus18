@@ -18,6 +18,9 @@ class HomeController < ApplicationController
   def event
     @event = Event.find(params[:id])
   end
+  def our_team
+    @members = TeamMember.all
+  end
   private
   # def params
   #
