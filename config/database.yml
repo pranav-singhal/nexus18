@@ -28,3 +28,4 @@ production:
   timeout: 5000
   username: appname
   password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
+  database: appname
