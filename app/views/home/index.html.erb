@@ -39,14 +39,9 @@
       <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
           <h1>Events</h1>
           <div id="events-carousel" class="carousel">
-
-
-              <div style="background-image:url('/event2.jpg'); cursor: pointer;" onclick="window.location='/1';"><h2>THIRAK</h2></div>
-              <div style="background-image:url('/event3.jpg'); cursor: pointer;" onclick="window.location='/2';"><h2>Acapella</h2></div>
-              <div style="background-image:url('/event4.jpg'); cursor: pointer;" onclick="window.location='/3';"><h2>JugalBandi</h2></div>
-              <div style="background-image:url('/event5.jpg'); cursor: pointer;" onclick="window.location='/4';"><h2>THIRAK1</h2></div>
-              <div style="background-image:url('/event6.jpg'); cursor: pointer;" onclick="window.location='/5';"><h2>THIRAK2</h2></div>
-              <div style="background-image:url('/event7.jpg'); cursor: pointer;" onclick="window.location='/6';"><h2>THIRAK3</h2></div>
+              <%@events.each do |event|%>
+                <div style="background-image:url('/event_pics/<%=event.image%>'); cursor: pointer;" onclick="window.location='/<%=event.id%>';"><h2><%=event.title%></h2></div>
+              <%end%>
           </div>
       </div>
       <div class="col-md-12 col-sm-12">

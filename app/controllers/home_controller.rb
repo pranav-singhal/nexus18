@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def index
+    @events = Event.first(5)
   end
   def events
     respond_to do |format|
