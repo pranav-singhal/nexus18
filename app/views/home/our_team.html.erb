@@ -7,9 +7,7 @@
             <img src="/faa_members/<%=mem.image%>" alt="<%=mem.name%>" class="member">
             <h3 class="member"> <%=mem.name%></h3>
           </div>
-
         <%end%>
-
     </div>
     <div class="row committee" id="creative">
       <div class="text">
@@ -25,14 +23,12 @@
     </div>
     <div class="row committee" id="techincal">
       <h1>Techincal Team</h1>
-
       <%@members.where(:committee => 'technical').each do |member|%>
         <div class="col-md-4 col-sm-4 col-xs-4">
           <img src="/faa_members/<%=member.image%>" alt="<%=member.name%>" class="member">
           <h3 class="member"><%=member.name%></h3>
         </div>
       <%end%>
-
     </div>
     <div class="row committee" id="organising">
       <h1>Organising Team</h1>
@@ -45,23 +41,16 @@
     </div>
     <div class="row committee" id="union">
       <h1>Student Union</h1>
-
       <%@members.where(:committee => 'union').each do |member|%>
         <div class="col-md-4 col-sm-4 col-xs-4">
           <img src="/faa_members/<%=member.image%>" alt="<%=member.name%>" class="member">
           <h3 class="member"><%=member.name%></h3>
         </div>
-
       <%end%>
-
     </div>
-
-
-
-
-
   </section>
 </div>
+
 <style media="screen">
 nav ul li{
   color:black;

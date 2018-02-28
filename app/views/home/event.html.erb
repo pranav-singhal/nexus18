@@ -4,10 +4,12 @@
       <h1><%=@event.title%></h1>
       <div class="col-md-12">
         <div class="col-md-6">
-          <img src="<%='/event_pics/'+@event.image%>" alt="<%=@event.title.capitalize%>">
+          <img src="<%='/event_pics/posters/'+@event.poster%>" alt="<%=@event.title.capitalize%>">
         </div>
         <div class="col-md-6">
-            <p><%=@event.description%></p>
+          <h2>Organised By: <span><%= @event.organiser%></span></h2>
+          <h2>Rules &amp; Regulations</h2>
+            <p><%=raw @event.rules%></p>
             <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3">
                 <button type="button" name="button" class="btn btn-primary">Click Here To Register</button>
             </div>
@@ -18,3 +20,11 @@
   </div>
 
 </section>
+<style media="screen">
+  body{
+    background-image: url('/bg-brush.jpg');
+  }
+  nav ul li{
+    color: black;
+  }
+</style>
