@@ -40,7 +40,7 @@
           <h1>Events</h1>
           <div id="events-carousel" class="carousel">
               <%@events.each do |event|%>
-                <div style="background-image:url('/event_pics/<%=event.image%>'); cursor: pointer;" onclick="window.location='/<%=event.id%>';"><h2><%=event.title%></h2></div>
+                <div style="background-image:url('/event_pics/cards/<%=event.image%>'); cursor: pointer;" onclick="window.location='/<%=event.id%>';"><h2><%=event.title%></h2></div>
               <%end%>
           </div>
       </div>
