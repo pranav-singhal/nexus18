@@ -73,7 +73,8 @@ header{
   // top: -146px;
   height: 100vh;
   width: 100vw;
-  background-image: url('/back2.jpg');
+  // background-image: url('/back2.jpg');
+  background-image: url('/banner.jpg');
 
   background-attachment: fixed;
   img{
@@ -231,12 +232,15 @@ height: 400px;
 
 
 #our-team{
+
+
   img.member{
     display: block;
     margin: 0 auto;
     -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
-    max-width: 20vw;
+    max-width: 15vw;
+    max-height: 15vw;
     border-radius: 50%;
   }
   h3.member{
@@ -247,7 +251,7 @@ height: 400px;
   }
 
   #creative{
-    background-image: url('/creative-back.jpg');
+    background-image: url('/friends-back.jpg');
 
     // background-attachment: fixed;
     background-size: cover;
@@ -259,14 +263,31 @@ height: 400px;
 
 
   }
-  #techincal{
-    background-image: url('/tech-back.jpg');
+  .committee{
+    @media only screen and (max-device-width: 773px) {
 
+          background-attachment: scroll;
+
+  }
     background-attachment: fixed;
-
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+  #techincal{
+    background-image: url('/tech-back.jpg');
+
+  }
+  #core{
+    background-image: url('/18499_game_of_thrones.png');
+
+  }
+  #organising{
+    background-image: url('/The_Testament_of_Sherlock_Holmes_Background.jpg');
+
+  }
+  #union{
+    background-image: url('/house-of-cards.jpg');
 
   }
 }
