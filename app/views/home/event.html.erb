@@ -10,9 +10,12 @@
           <h2>Organised By: <span><%= @event.organiser%></span></h2>
           <h2>Rules &amp; Regulations</h2>
             <p><%=raw @event.rules%></p>
-            <div class="col-md-6 col-md-offset-3 col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3">
-                <button type="button" name="button" class="btn btn-primary">Click Here To Register</button>
+            <%if @event.reg_required%>
+            <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+              <a href="<%=@event.link%>" class="btn btn-primary" target="_blank">Click Here To Register</a>
+
             </div>
+            <%end%>
         </div>
 
       </div>

@@ -219,6 +219,9 @@ margin: 13px;
 
 
 #each-event-page{
+  a.btn, a.btn:hover, a.btn:visited{
+    color:white !important;
+  }
   h2{
     font-family: 'Covered By Your Grace', cursive;
     span{
