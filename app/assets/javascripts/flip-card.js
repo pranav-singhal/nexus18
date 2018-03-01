@@ -28,13 +28,16 @@ $(document).ready(function () {
 
     //masonry
     var $container = $('#masonry-container');
-    $container.masonry({
-        // columnWidth: 40,
-        itemSelector: '.card',
-        isAnimated: true,
-        animationOptions: {
-            duration: 400
-        }
-    });
+    $container.imagesLoaded(function(){
+      $container.masonry({
+          // columnWidth: 40,
+          itemSelector: '.card',
+          isAnimated: true,
+          animationOptions: {
+              duration: 400
+          }
+      });
+    })
+
 
 });
