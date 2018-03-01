@@ -3,16 +3,31 @@
 .card {
   h1{
     position: absolute;
-    left: 4px;
+    left: 6px;
     font-size: 3vw;
     color:white;
+    margin-top: 8px;
   }
+  h1#Countenance, h1#Countenance+h2{
+    color: rgb(18, 21, 255);
+  }
+  h1#Intervals, h1#Intervals+h2{
+    color: rgb(211, 31, 87);
+  }
+  h1#Rolling, h1#Rolling+h2{
+    color: green;
+  }
+  h1#Story, h1#Strory+h2{
+    color:rgb(251, 141, 44);
+  }
+
   h2{
     position: absolute;
     top: 2.7vw;
     left: 4px;
     font-size: 2.6vw;
     color:white;
+    margin-top: 14px;
   }
 
   img{

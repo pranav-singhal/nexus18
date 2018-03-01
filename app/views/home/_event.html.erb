@@ -5,8 +5,8 @@
 
 <div class="card">
         <div class="front test">
-          <h1><%=event.title%></h1>
-          <h2><%=truncate event.description%></h2>
+          <h1 id="<%=event.title.split(" ")[0]%>"><%=event.title%></h1>
+          <h2><%= event.description%></h2>
              <img src="<%='/event_pics/cards/'+event.image%>" alt="<%=event.title.capitalize%>">
         </div>
         <div class="back test">
