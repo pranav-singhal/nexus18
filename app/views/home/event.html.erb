@@ -6,7 +6,7 @@
         <div class="col-md-6">
           <img src="<%='/event_pics/posters/'+@event.poster%>" alt="<%=@event.title.capitalize%>">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="rules">
           <h2>Organised By: <span><%= @event.organiser%></span></h2>
           <h2>Rules &amp; Regulations</h2>
             <p><%=raw @event.rules%></p>
@@ -29,5 +29,11 @@
   }
   nav ul li{
     color: black;
+  }
+  #rules{
+
+  }
+  #rules p{
+      font-family: Montserrat;
   }
 </style>
