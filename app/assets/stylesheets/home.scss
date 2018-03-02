@@ -69,11 +69,8 @@ header{
 
 }
   z-index: -1;
-  // position: relative;
-  // top: -146px;
   height: 100vh;
   width: 100vw;
-  // background-image: url('/back2.jpg');
   background-image: url('/banner.jpg');
 
   background-attachment: fixed;
@@ -129,7 +126,6 @@ section{
 
 // setting for slick
 .carousel{
-  // width: 80vw;
   .slick-prev:before {
   color: black;
 }
@@ -137,15 +133,12 @@ section{
   color: black;
 }
 .slick-list{
-  // padding: 0px 20px;
 height: 400px;
     margin-top: 50px;
-// max-width: 100%;
 }
 
   /* the parent */
   .slick-slide{
-    // border: 1px solid black;
     box-shadow: none;
     transition: box-shadow 1s;
     transition: transform 1s;
@@ -160,8 +153,6 @@ height: 400px;
   .slick-center::after{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   opacity: 0;
-  // -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  // transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   div{
     h2{
@@ -170,28 +161,19 @@ height: 400px;
     }
     margin: 10px;
     height: 300px;
-        // margin: auto;
-        background-size: cover;
-        background-position: center center;
-
+    background-size: cover;
+    background-position: center center;
     text-align: center;
-    // border: 1px solid black;
   }
 }
 
 #events-index{
-  // background-image: url('/bg-brush.jpg');
-  // background-size: cover;
-  // background-attachment: scroll;
-  // background-position: center center;
   .row{
-
     margin-top: 80px;
     @media(max-width: 729px){
       margin-top: 0;
     }
 
-    // background-attachment: fixed;
     h3{
       font-family: blowBrush,cursive;
       text-align: center;
@@ -239,8 +221,6 @@ margin: 13px;
     font-size: 1.2em;
     padding-top: 16px;
   }
-  background-image: url('http://ava7.com/w/tv-series/friends/friends-tv-series-show.jpg');
-
   background-attachment: fixed;
   background-size: cover;
 
@@ -271,8 +251,6 @@ margin: 13px;
 
   #creative{
     background-image: url('/friends-back.jpg');
-
-    // background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

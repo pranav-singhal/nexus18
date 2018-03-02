@@ -27,13 +27,14 @@
   padding: 0px;
   box-sizing: border-box;
 }
+a:hover, .svg-inline--fa:hover{
+  cursor: pointer !important;
+}
 html{
   height: 100%;
 }
 body,html{
-  /* height: 100%; */
 
-  /* background-color: #fbf3f1 !important; */
   width: 100vw;
   position: absolute;
   top: 0;
