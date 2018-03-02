@@ -1,7 +1,5 @@
 $(function(){
-
   if ($("html").hasClass("csstransforms3d")) {
-    console.log("inside this ");
     $('.card').hover(function () {
       $(this).addClass('flip');
     }, function () {
@@ -19,27 +17,8 @@ $(function(){
       }, 'fast');
     });
   }
-
-  // Set the size of the card
   $('.card').each(function () {
     var cardHeight = $(this).find('.test:first-child').outerHeight();
     $(this).css('height', cardHeight).children().css('height', cardHeight);
   });
-
-  //masonry
-  $(window).on('load',function(){
-    var $container = $('#masonry-container');
-    $container.imagesLoaded(function(){
-      $container.masonry({
-        itemSelector: '.card',
-        isAnimated: true,
-        animationOptions: {
-          duration: 400
-        }
-      });
-    })
-  })
-
-
-
 });

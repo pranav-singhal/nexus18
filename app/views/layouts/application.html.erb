@@ -35,23 +35,15 @@
 
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
-
 <body>
   <div id="preloader">
     <div id="loader">
-
-
     </div>
   </div>
-  <!-- <div class="container-fluid"> -->
 
   <div class="responsive_content">
-
     <header id="responsive_view_header">
-
       <div id="responsive_side_nav_button">
-
-
         <input type="checkbox" id="responsive_side_nav_button_font" />
         <label for="responsive_side_nav_button_font" class="responsive_menu_icon" >
           <div id="nav-icon1">
@@ -60,9 +52,7 @@
             <span></span>
           </div>
         </label>
-
         <nav id="overlay_responsive_header">
-
           <ul>
             <li> <a href="/"> Home</a></li>
             <li><a href="/events">Events</a></li>
@@ -72,29 +62,18 @@
               <a href="https://twitter.com/nexus_svc?lang=en">   <i class="fab fa-twitter"></i> </a>
               <a href="https://www.instagram.com/nexus_svc/"> <i class="fab fa-instagram"></i></a>   </li>
             </ul>
-
           </nav>
-
-
-
         </div>
-
-
-
         <div id="responsive_logo">
-
           <h1>N <span style="color:rgba(241,75,56,1)">.</span>
             E <span style="color:rgba(1,177,241,1)">.</span>
             X <span style="color:rgba(244,201,60,1)">.</span>
             U <span style="color:rgba(241,75,56,1)">.</span>
             S <span style="color:rgba(244,201,60,1)">.</span>
             ' 1 8</h1>
-
           </div>
         </header>
-
       </div>
-
       <nav id="desktop-view-of-header">
         <div class="container">
           <div class="row">
@@ -114,14 +93,11 @@
                 <li><i class="fab fa-facebook-f"></i></li>
                 <li><i class="fab fa-twitter"></i></li>
                 <li><i class="fab fa-instagram"></i></li>
-
               </ul>
-
             </div>
           </div>
         </div>
       </nav>
       <%= yield %>
-      <!-- </div> -->
     </body>
     </html>

@@ -1,18 +1,13 @@
-$(function(){
-  setTimeout(function(){
-    $('#preloader').fadeOut('slow',function(){$(this).remove()});
-  },5000);
-  $(window).on('load',function(){
 
-    var scroll = new SmoothScroll('a[href*="#"]',{
-      offset: -60
-    });
+$(window).on('load',function(){
 
-      $('#preloader').fadeOut('slow',function(){$(this).remove()});
-
-
-  })
-
+  // remove preloader
+  $('#preloader').fadeOut('slow',function(){$(this).remove()});
+  // initiate SmoothScroll
+  var scroll = new SmoothScroll('a[href*="#"]',{
+    offset: -60
+  });
+  // animate navbar
   $(function() {
     $(window).scroll(function () {
       if ($(this).scrollTop() > 50) {
@@ -25,5 +20,17 @@ $(function(){
       }
     });
   });
+  // masonry
+  var $container = $('#masonry-container');
+  $container.imagesLoaded(function(){
+
+    $container.masonry({
+      itemSelector: '.card',
+      isAnimated: true,
+      animationOptions: {
+        duration: 400
+      }
+    });
+  })
 
 })
