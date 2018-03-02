@@ -4,8 +4,8 @@ var box = $('.card');
 container.masonry('remove',box);
 <%@events.each do |event|%>
 console.log("event added");
-  var node = "<%=escape_javascript(render("event", event: event))%>";
-  // console.log(node);
+var node = "<%=escape_javascript(render("event", event: event))%>";
+// console.log(node);
 
-  container.prepend(node).masonry('reload');
+container.prepend(node).masonry('reload');
 <%end%>

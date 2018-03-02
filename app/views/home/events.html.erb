@@ -5,23 +5,23 @@
       <div class="col-md-12">
         <h1>Our Events</h1>
         <%=search_form_for (@search) do |f|%>
-            <div class="form-group col-md-10 col-sm-10 col-xs-10">
+        <div class="form-group col-md-10 col-sm-10 col-xs-10">
 
 
-              <%=f.select :genre_cont, options_for_select(['Music','Art','Dance', 'Writing/Speaking','Photography/Filmography','Drama']), include_blank: 'select a genre'%>
-            </div>
-              <div class="class col-md-2 col-sm-2 col-xs-2 form-group">
-                <%= button_tag type: 'submit', class: "btn btn-default", id: "register-button" do %>
-                <i class="fas fa-search"></i>
-                <% end %>
-              </div>
+          <%=f.select :genre_cont, options_for_select(['Music','Art','Dance', 'Writing/Speaking','Photography/Filmography','Drama']), include_blank: 'select a genre'%>
+        </div>
+        <div class="class col-md-2 col-sm-2 col-xs-2 form-group">
+          <%= button_tag type: 'submit', class: "btn btn-default", id: "register-button" do %>
+          <i class="fas fa-search"></i>
+          <% end %>
+        </div>
 
         <%end%>
       </div>
       <div class="col-md-12" style="margin-top: 50px;">
         <div id="masonry-container" class="transitions-enabled ">
           <%@events.each do |event|%>
-              <%=render('event', event: event)%>
+          <%=render('event', event: event)%>
           <%end%>
         </div>
       </div>
@@ -34,9 +34,9 @@
 
 <script type="text/javascript">
 
-  $('#q_genre_cont').selectize({
-    create: false,
-    sortField: 'text'
+$('#q_genre_cont').selectize({
+  create: false,
+  sortField: 'text'
 });
 </script>
 
@@ -46,41 +46,36 @@
 nav ul li{
   color:black;
 }
-  .card .back {
-    background-color: rgba(238, 238, 238,1);
+.card .back {
+  background-color: rgba(238, 238, 238,1);
   background-image: url('/priecing-table-bg.jpg');
   background-size: cover;
   background-position: center center;
+}
+.card .back p{
+
+  font-size: 2.6vw;
+  color: white;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+  background-image: url('/friends-bg2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+@media only screen and (max-width: 500px) {
+  body {
+    background-attachment: scroll;
+    background-position: top;
+    background-repeat: repeat;
   }
-  .card .back p{
-
-    font-size: 2.6vw;
-color: white;
-text-align: center;
-font-family: Montserrat;
-font-weight: 700;
-font-style: normal;
-  }
-
-    body{
-      background-image: url('/friends-bg2.jpg');
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-
-    }
-    @media only screen and (max-width: 500px) {
-      body {
-          background-attachment: scroll;
-          background-position: top;
-          background-repeat: repeat;
-      }
-  }
-
-
-
-
-
+}
 
 </style>

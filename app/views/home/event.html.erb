@@ -8,18 +8,18 @@
         </div>
         <div class="col-md-6" id="rules">
           <%if @event.rules?%>
-            <h2>Rules &amp; Regulations</h2>
-            <p><%=raw @event.rules%></p>
+          <h2>Rules &amp; Regulations</h2>
+          <p><%=raw @event.rules%></p>
           <%end%>
           <%if @event.reg_required%>
-            <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
-              <a href="<%=@event.link%>" class="btn btn-primary" target="_blank">Click Here To Register</a>
-            </div>
-            <%else%>
+          <div class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2">
+            <a href="<%=@event.link%>" class="btn btn-primary" target="_blank">Click Here To Register</a>
+          </div>
+          <%else%>
 
-                <br>
-              <h2 style="text-align: center;">No Registration required</h2>
-            
+          <br>
+          <h2 style="text-align: center;">No Registration required</h2>
+
 
           <%end%>
         </div>
@@ -30,16 +30,16 @@
 
 </section>
 <style media="screen">
-  body{
-    background-image: url('/bg-brush.jpg');
-  }
-  nav ul li{
-    color: black;
-  }
-  #rules{
+body{
+  background-image: url('/bg-brush.jpg');
+}
+nav ul li{
+  color: black;
+}
+#rules{
 
-  }
-  #rules p{
-      font-family: Montserrat;
-  }
+}
+#rules p{
+  font-family: Montserrat;
+}
 </style>

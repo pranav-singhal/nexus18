@@ -6,12 +6,12 @@ class HomeController < ApplicationController
     respond_to do |format|
       format.html{
         @search = Event.search(params[:q])
-        # byebug
+
         @events = @search.result
       }
       format.js{
         @search = Event.search(params[:q])
-        # byebug
+
         @events = @search.result
       }
     end
@@ -22,10 +22,5 @@ class HomeController < ApplicationController
   def our_team
     @members = TeamMember.all
   end
-  private
-  # def params
-  #
-  #
-  # end
 
 end

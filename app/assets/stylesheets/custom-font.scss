@@ -1,11 +1,11 @@
 // generate custom font using this template
 @font-face {
-    font-family: 'blowBrush';
-    src: url('/blowbrush-webfont.woff2') format('woff2'),
-         url('/blowbrush-webfont.woff') format('woff'),
-         url('/blowbrush-webfont.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'blowBrush';
+  src: url('/blowbrush-webfont.woff2') format('woff2'),
+  url('/blowbrush-webfont.woff') format('woff'),
+  url('/blowbrush-webfont.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
@@ -13,8 +13,8 @@
 @font-face{
   font-family: 'friends';
   src: url('/GABRWFFR.ttf') format('ttf'),
-      url('/GABRWFFR.woff') format('woff'),
-      url('/GABRWFFR.woff2') format('woff2'),;
+  url('/GABRWFFR.woff') format('woff'),
+  url('/GABRWFFR.woff2') format('woff2'),;
   font-weight: normal;
   font-style: normal;
 }
