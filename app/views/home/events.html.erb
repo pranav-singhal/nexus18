@@ -33,18 +33,13 @@
 
 
 <script type="text/javascript">
-
-
-
 $(function(){
   $('#q_genre_cont').selectize({
     create: false,
     sortField: 'text'
   });
-
-  $(window).on('load',function(){
     var $container = $('#masonry-container');
-
+    $container.imagesLoaded(function(){
       $container.masonry({
         itemSelector: '.card',
         isAnimated: true,
@@ -52,13 +47,9 @@ $(function(){
           duration: 400
         }
       })
-  })
-
-
+    });
 })
 </script>
-
-
 
 <style media="screen">
 nav ul li{
