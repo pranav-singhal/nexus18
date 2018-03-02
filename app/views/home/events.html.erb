@@ -34,10 +34,28 @@
 
 <script type="text/javascript">
 
-$('#q_genre_cont').selectize({
-  create: false,
-  sortField: 'text'
-});
+
+
+$(document).ready(function(){
+  $('#q_genre_cont').selectize({
+    create: false,
+    sortField: 'text'
+  });
+
+  $(window).on('load',function(){
+    var $container = $('#masonry-container');
+
+      $container.masonry({
+        itemSelector: '.card',
+        isAnimated: true,
+        animationOptions: {
+          duration: 400
+        }
+      }).masonry('reload');
+  })
+
+
+})
 </script>
 
 
