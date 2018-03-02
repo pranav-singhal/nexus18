@@ -9,11 +9,7 @@ class HomeController < ApplicationController
 
         @events = @search.result
       }
-      format.js{
-        @search = Event.search(params[:q])
-
-        @events = @search.result
-      }
+      
     end
   end
   def event
