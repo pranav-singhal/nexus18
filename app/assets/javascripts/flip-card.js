@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
 
   if ($("html").hasClass("csstransforms3d")) {
     console.log("inside this ");

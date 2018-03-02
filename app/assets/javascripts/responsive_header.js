@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
   $('#responsive_search_icon_button').bind('change', function() {
     $(".search-icon-responsive-changing").toggleClass("shown");
     if (this.checked) {
