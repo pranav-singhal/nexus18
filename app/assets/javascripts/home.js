@@ -1,13 +1,15 @@
 $(function(){
-  setTimeout(function(){
-    $('#preloader').fadeOut('slow',function(){$(this).remove()});
-  },3000);
+  // setTimeout(function(){
+  //   $('#preloader').fadeOut('slow',function(){$(this).remove()});
+  // },3000);
   $(window).on('load',function(){
 
     var scroll = new SmoothScroll('a[href*="#"]',{
       offset: -60
     });
-
+    setTimeout(function(){
+      $('#preloader').fadeOut('slow',function(){$(this).remove()});
+    },3000);
 
   })
 
