@@ -288,3 +288,16 @@ margin: 13px;
 
   }
 }
+footer{
+  background-color: pink;
+  position: absolute;
+  width: 100%;
+  background-color:rgb(211, 31, 87);
+  p{
+    text-align: center;
+    color: white;
+    a:visited{
+      color: white !important;
+    }
+  }
+}
